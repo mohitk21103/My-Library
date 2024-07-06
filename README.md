@@ -4,12 +4,12 @@ A web application for managing a library collection using Flask and SQLAlchemy.
 
 ## Table of Contents
 
-1. [About]
-2. [Features]
-3. [Installation]
-4. [Usage]
-5. [Contributing]
-6. [License]
+1. [About](#about)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 ## About
 
@@ -36,31 +36,32 @@ Follow these steps to set up the project locally on your machine.
 
 1. Clone the repository:
 
-   
+   ```bash
    git clone https://github.com/yourusername/my-library-project.git
    cd my-library-project
-   
+   ```
 
 2. Create a virtual environment (optional but recommended):
 
-  
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
- 
+   ```
 
 3. Install dependencies:
 
+   ```bash
    pip install -r requirements.txt
-
+   ```
 
 4. Initialize the database:
 
-
+   ```bash
    python
    from app import db
    db.create_all()
    exit()
-  
+   ```
 
 ## Usage
 
@@ -68,9 +69,9 @@ Follow these steps to set up the project locally on your machine.
 
 Start the Flask development server:
 
-
+```bash
 python app.py
-
+```
 
 Access the application in your web browser at `http://localhost:5000`.
 
@@ -92,4 +93,6 @@ Contributions are welcome! Please follow these guidelines:
 
 ## License
 
-This project is licensed under the MIT License 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
