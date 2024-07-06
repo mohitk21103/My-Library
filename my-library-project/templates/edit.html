@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Rating</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+      <h1>Edit Book Rating</h1>
+      <form action="{{ url_for('edit') }}" method="POST">
+        <p><strong>Book Name:</strong> {{book.title}}</p>
+        <p><strong>Current Rating:</strong> {{book.rating}}</p>
+        <input type="hidden" name="id" value="{{book.id}}">
+        <label for="rating">New Rating</label>
+        <input name="rating" type="number" id="rating" step="0.1" min="0" max="10" placeholder="New Rating" required>
+        <button type="submit">Change Rating</button>
+      </form>
+    </div>
+</body>
+</html>
